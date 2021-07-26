@@ -1,0 +1,18 @@
+[package]
+name = "breadx-blocking"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+#async-lock = { version = "2", optional = true }
+blocking = "1"
+breadx = { version = "1", features = ["async"] }
+#concurrent-queue = { version = "1", optional = true }
+#noop-waker = { version = "0.1", optional = true }
+#pin-utils = { version = "0.1", optional = true }
+tokio = { version = "1", features = ["rt", "sync"], optional = true }
+
+[features]
+default = []
+#immutable = ["async-lock", "concurrent-queue", "noop-waker", "pin-utils"]
+tokio-support = ["tokio", "breadx/tokio-support"]
