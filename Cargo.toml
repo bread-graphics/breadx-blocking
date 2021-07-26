@@ -6,6 +6,7 @@ authors = ["notgull <jtnunley01@gmail.com>"]
 repository = "https://github.com/bread-graphics/breadx-blocking"
 homepage = "https://github.com/bread-graphics/breadx-blocking#readme"
 license = "MIT OR Apache-2.0"
+description = "Asynchronous wrapper around sync breadx displays"
 
 [dependencies]
 #async-lock = { version = "2", optional = true }
